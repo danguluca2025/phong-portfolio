@@ -302,7 +302,6 @@ input[type=submit]:hover {
 	.skill-grid {
 		grid-template-columns: 1fr;
 	}
-
 	.content,
 	.introduce-grid {
 		margin-left: 0;
