@@ -107,12 +107,10 @@ h2 {
 -----------------------*/
 .introduce-grid .item,
 .skill-grid .item {
-	display: grid;
-	grid-template-columns: 1fr;
 	gap: 10px;
-	padding: 20px;
 	border-radius: 8px;
 	background-color: aliceblue;
+	padding: 10px;
 }
 
 /*成果物ブロック

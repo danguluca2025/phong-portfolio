@@ -25,10 +25,10 @@
 		<li><a href="#galleries">写真集</a></li>
 		<li><a href="#contact">お問い合わせ</a></li>
 	</ul>
-	
+
 	<!--本文-->
 	<div class="content">
-		
+
 		<!--自己紹介ブロック-->
 		<section id="introduce">
 			<h2>自己紹介</h2>
@@ -75,7 +75,7 @@
 			</div>
 
 		</section>
-		
+
 		<!--スキルブロック-->
 		<section id="skills">
 			<h2>スキル</h2>
@@ -115,16 +115,17 @@
 				</div>
 			</div>
 		</section>
-		
+
 		<!--成果物ブロック-->
 		<section id="works">
 			<h2>成果物</h2>
-			<h4>チーム開発演習: <a class="project-url" href="https://github.com/danguluca2025/console_crud_user_dang.git" alt="成果1のURL">➤ 社員情報CRUD-コンソールアプリ</a></h4>
+			<h4>チーム開発演習: <a class="project-url" href="https://github.com/danguluca2025/console_crud_user_dang.git"
+					alt="成果1のURL">➤ 社員情報CRUD-コンソールアプリ</a></h4>
 			<h4>個人開発演習: <a class="project-url" href="" alt="成果2のURL">➤ 社員情報WEBアプリ</a></h4>
 			<!--			<h3>その他の成果物</h3>-->
 			<!--			<a href="" alt="その他1"></a>-->
 		</section>
-		
+
 		<!--写真集ブロック-->
 		<section id="galleries">
 			<h2>写真集</h2>
@@ -135,7 +136,7 @@
 				<img src="./image/gallery-img-4.jpg" alt="Gallery-img-4" onclick="this.requestFullscreen()">
 			</div>
 		</section>
-		
+
 		<!--お問い合せブロック-->
 		<section id="contact">
 			<!--お問合せ情報テーブル-->
@@ -158,7 +159,7 @@
 					<td><a href="tel:+810012345678">000-1234-5678</a></td>
 				</tr>
 			</table>
-			
+
 			<!--お問合せフォーム-->
 			<div class="container">
 				<form action="">
@@ -167,23 +168,22 @@
 					<label for="pnounce">氏名（ひらがな）</label>
 					<input type="text" id="pnounce" name="pronounce" placeholder="おなまえ">
 					<label for="subject">お問い合わせ内容</label>
-					<textarea id="subject" name="subject" placeholder="お問い合わせ内容"
-						style="height:200px"></textarea>
+					<textarea id="subject" name="subject" placeholder="お問い合わせ内容" style="height:200px"></textarea>
 					<input type="submit" value="送信">
 				</form>
 			</div>
 		</section>
-		
+
 		<!--copyright-->
 		<div class="footer">
 			<div class="copyright"><small>&copy; 2025 Dang Dinh Phong</small></div>
 		</div>
-		
+
 		<!--scroll-to-topボタンHTML記述-->
 		<button onclick="topFunction()" id="myBtn" title="Go to top"><img src="./image/up-arrow.png"
 				alt="to-top"></button>
 	</div>
-	
+
 	<!--scroll-to-topボタンのJs設定-->
 	<script>
 		//ボタン表示を有効化する
@@ -191,8 +191,8 @@
 
 		//トップ画面から20px下にスクロールされたら表示するように設定
 		window.onscroll = function () {scrollFunction()};
-		
-		
+
+
 		function scrollFunction() {
 			if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
 				mybutton.style.display = "block";
@@ -200,7 +200,7 @@
 				mybutton.style.display = "none";
 			}
 		}
-		
+
 		//ボタンがクリックされたらトップ画面に移動
 		function topFunction() {
 			document.body.scrollTop = 0; //Safari用
