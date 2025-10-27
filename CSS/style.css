@@ -272,10 +272,8 @@ input[type=submit]:hover {
 		display: none;
 	}
 
-	.gallery {
-		grid-template-columns: 1fr;
-	}
-
+	
+	.gallery,
 	.introduce-grid,
 	.skill-grid {
 		grid-template-columns: 1fr;
@@ -287,8 +285,8 @@ input[type=submit]:hover {
 	}
 
 	button img {
-		width: 20px;
-		height: 20px;
+		width: 30px;
+		height: 30px;
 	}
 }
 
