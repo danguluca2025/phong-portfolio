@@ -134,26 +134,25 @@ h2 {
 
 
 #myBtn {
-	display: none;
-	/* Hidden by default */
-	position: fixed;
-	/* Fixed/sticky position */
+	display: none;/*デフォルト：オフ*/
+	position: fixed;/*位置を固定*/
+	
+	/*位置設定*/
 	bottom: 40px;
-	/* Place the button at the bottom of the page */
 	right: 30px;
-	/* Place the button 30px from the right */
-	z-index: 99;
-	/* Make sure it does not overlap */
-	border: none;
-	/* Remove borders */
+	
+	z-index: 99;/*オーバーラップさせない*/
+	
+	border: none;/*ボーダー削除*/
+	
+	/*通常色*/
 	background-color: rgb(0, 128, 255, 0.5);
-	/* Set a background color */
+	
+	/*ホバー時にポインター表示*/
 	cursor: pointer;
-	/* Add a mouse pointer on hover */
+	
 	padding: 15px;
-	/* Some padding */
 	border-radius: 8px;
-	/* Rounded corners */
 }
 
 button img {
@@ -162,8 +161,8 @@ button img {
 }
 
 #myBtn:hover {
+	/*ホバー時の背景色*/
 	background-color: #555;
-	/* Add a dark-grey background on hover */
 }
 
 .info{
@@ -195,29 +194,22 @@ button img {
 	padding: 1rem 0;
 }
 
-/* Style inputs with type="text", select elements and textareas */
+/* お問い合わせフォーム */
 input[type=text],
 select,
 textarea {
 	width: 100%;
-	/* Full width */
 	padding: 12px;
-	/* Some padding */
 	border: 1px solid #ccc;
-	/* Gray border */
 	border-radius: 4px;
-	/* Rounded borders */
-	box-sizing: border-box;
-	/* Make sure that padding and width stays in place */
+	box-sizing: border-box;/*paddingおよびwidthを固定*/
 	margin-top: 6px;
-	/* Add a top margin */
 	margin-bottom: 16px;
-	/* Bottom margin */
 	resize: vertical
-		/* Allow the user to vertically resize the textarea (not horizontally) */
+	/*横置きで入力する際に入力ボックスのサイズを変更化する*/
 }
 
-/* Style the submit button with a specific background color etc */
+/*送信ボタンを色付け*/
 input[type=submit] {
 	background-color: deepskyblue;
 	color: white;
@@ -227,12 +219,12 @@ input[type=submit] {
 	cursor: pointer;
 }
 
-/* When moving the mouse over the submit button, add a darker green color */
+/*送信ボタンのホバーに別の色付け*/
 input[type=submit]:hover {
 	background-color: lightskyblue;
 }
 
-/* Add a background color and some padding around the form */
+/*フォームブロックに色調整、padding調整など*/
 .container {
 	border-radius: 5px;
 	background-color: #f2f2f2;
