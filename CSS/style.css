@@ -315,6 +315,7 @@ input[type=submit]:hover {
 	.footer{
 		background-color: antiquewhite;
 		margin-left: 0;
+		border-radius: 8px;
 	}
 	.copyright{
 		justify-content: center;
