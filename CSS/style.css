@@ -311,6 +311,15 @@ input[type=submit]:hover {
 		width: 30px;
 		height: 30px;
 	}
+	
+	.footer{
+		background-color: antiquewhite;
+		margin-left: 0;
+	}
+	.copyright{
+		justify-content: center;
+		text-align: center;
+	}
 }
 
 @media screen and (max-width: 450px) {
