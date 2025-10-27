@@ -24,7 +24,18 @@ h3 {
 	padding: 10px 0;
 }
 
+a:link{
+	color: darkblue;
+}
+a:link:hover,
+a:visited:hover{
+	color: deepskyblue;
+}
 
+a:visited{
+	color: initial;
+	text-decoration: none;
+}
 
 /*ヘッダー
 --------------------------------------------*/
@@ -118,13 +129,6 @@ h2 {
 .project-url {
 	font-weight: normal;
 }
-
-.project-url:hover {
-	background-color: darkblue;
-	color: beige;
-	border-radius: 8px;
-}
-
 /*写真集ブロック
 -----------------------*/
 .gallery {
@@ -203,12 +207,7 @@ button img {
 	text-align: center;
 	padding: 1rem 0;
 }
-.info td a:link{
-	color: darkblue;
-}
-.info td a:link:hover{
-	color: deepskyblue;
-}
+
 
 
 /* お問い合わせフォーム 
