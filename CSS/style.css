@@ -312,8 +312,11 @@ input[type=submit]:hover {
 		height: 30px;
 	}
 	
+	button:actived{
+		background-color: rgb(0, 128, 255, 0.5);
+	}
+	
 	.footer{
-		background-color: antiquewhite;
 		margin-left: 0;
 		border-radius: 8px;
 	}
