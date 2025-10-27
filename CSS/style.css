@@ -1,5 +1,6 @@
 @charset "UTF-8";
-
+/*共通部分
+--------------------------------------------*/
 html {
 	scroll-behavior: smooth;
 }
@@ -23,6 +24,13 @@ h3 {
 	padding: 10px 0;
 }
 
+
+
+/*ヘッダー
+--------------------------------------------*/
+
+/*サイドバー
+-----------------------*/
 .nav {
 	list-style-type: none;
 	margin: 0;
@@ -53,17 +61,13 @@ h3 {
 	color: white;
 }
 
-.my-info {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
 .nav li a:hover:not(.active) {
 	background-color: skyblue;
 	font-weight: bold;
 }
 
+/*本文
+--------------------------------------------*/
 .content {
 	display: grid;
 	grid-template-columns: 1fr;
@@ -74,13 +78,21 @@ h3 {
 	height: 1000px;
 }
 
-
+/*各ブロックの見出し調整*/
+h2 {
+	background-color: skyblue;
+	text-align: center;
+	border-radius: 8px;
+}
+/*自己紹介ブロック
+-----------------------*/
 .introduce-grid {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	gap: 10px;
 }
-
+/*スキルブロック
+-----------------------*/
 .skill-grid {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
@@ -91,6 +103,8 @@ h3 {
 	list-style-type: square;
 }
 
+/*自己紹介＋スキルの共有部分：item要素
+-----------------------*/
 .introduce-grid .item,
 .skill-grid .item {
 	display: grid;
@@ -101,6 +115,8 @@ h3 {
 	background-color: aliceblue;
 }
 
+/*成果物ブロック
+-----------------------*/
 .project-url {
 	font-weight: normal;
 }
@@ -111,12 +127,8 @@ h3 {
 	border-radius: 8px;
 }
 
-h2 {
-	background-color: skyblue;
-	text-align: center;
-	border-radius: 8px;
-}
-
+/*写真集ブロック
+-----------------------*/
 .gallery {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
@@ -129,7 +141,8 @@ h2 {
 	border-radius: 8px;
 }
 
-
+/*scroll-to-topボタンの適用
+-----------------------*/
 #myBtn {
 	display: none;/*デフォルト：オフ*/
 	position: fixed;/*位置を固定*/
@@ -162,6 +175,8 @@ button img {
 	background-color: #555;
 }
 
+/*お問い合わせ情報テーブルの調整
+-----------------------*/
 .info{
 	width:100%;
 	max-width: 500px;
@@ -174,7 +189,7 @@ button img {
 }
 
 .info th,td{
-	border-bottom: solid darkblue 0.5px;
+	border-bottom: solid lightslategrey 0.5px;
 }
 .info tr:last-child th,
 .info tr:last-child td{
@@ -184,14 +199,22 @@ button img {
 .info th{
 	text-align: center;
 	padding: 1rem;
-	border-right: solid darkblue 0.5px;
+	border-right: solid lightslategrey 0.5px;
 }
 .info td{
 	text-align: center;
 	padding: 1rem 0;
 }
+.info td a:link{
+	color: darkblue;
+}
+.info td a:link:hover{
+	color: deepskyblue;
+}
 
-/* お問い合わせフォーム */
+
+/* お問い合わせフォーム 
+-----------------------*/
 input[type=text],
 select,
 textarea {
@@ -238,19 +261,14 @@ input[type=submit]:hover {
 	text-align: end;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 800px) {
 	.nav {
+		background-color: red;
 		width: 100%;
 		height: auto;
 		position: relative;
-		justify-content: center;
-		align-items: center;
-	}
-
-	.nav li a {
-		float: left;
-		padding: 15px;
-		text-align: center;
+		display: flex;
+		justify-content: space-between;
 	}
 
 	.nav-img {
@@ -277,9 +295,13 @@ input[type=submit]:hover {
 	}
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
+	.nav{
+		display: block;
+	}
 	.nav li a {
+		display: inline-block;
 		text-align: center;
-		float: none;
+		font-size: 10px;
 	}
 }
