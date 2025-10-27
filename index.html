@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Dang's Portfolio</title>
+	<link rel="stylesheet" href="./CSS/style.css">
+	<link rel="icon" type="image/png" href="./image/favicon.png">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<ul class="nav">
+		<li><img class="nav-img" src="./image/favicon.png" alt="header-pic"></li>
+		<li><a href="#introduce">自己紹介</a></li>
+		<li><a href="#skills">スキル</a></li>
+		<li><a href="#works">成果物</a></li>
+		<li><a href="#galleries">写真集</a></li>
+		<li><a href="#contact">お問い合わせ</a></li>
+	</ul>
+
+	<div class="content">
+		<section id="introduce">
+			<h2>自己紹介</h2>
+			<div class="introduce-grid">
+				<div class="item">
+					<h3>基本情報</h3>
+					<ul>
+						<li>名前: <strong>ダン ディンフォン</strong></li>
+						<li>年齢: 26歳</li>
+						<li>職業: システムエンジニア（研修中）</li>
+					</ul>
+				</div>
+				<div class="item">
+					<h3>経歴</h3>
+					<ul>
+						<li>○○○株式会社</li>
+						<li>4年制大学卒</li>
+					</ul>
+				</div>
+
+				<div class="item">
+					<h3>所有資格</h3>
+					<ul>
+						<li>TOEIC 915点</li>
+						<li>日本語JLPT N1</li>
+						<li>色彩検定 3級</li>
+					</ul>
+				</div>
+
+				<div class="item">
+					<h3>今後の展望</h3>
+					<ul>
+						<li>即戦的なエンジニアとして活躍すること</li>
+						<li>新しいIT知識を継続的に学習できること</li>
+					</ul>
+				</div>
+				<div class="item">
+					<h3>趣味</h3>
+					<ul>
+						<li>ポッドキャスト、スタンドアップコメディ</li>
+						<li>POP音楽</li>
+					</ul>
+				</div>
+			</div>
+
+		</section>
+
+		<section id="skills">
+			<h2>スキル</h2>
+			<div class="skill-grid">
+				<div class="item">
+					<h3>Java</h3>
+					<ul>
+						<li>変数宣言、配列、条件分岐、繰り返し</li>
+						<li>クラス、メソッド、継承、カプセル化</li>
+						<li>コレクションフレームワーク、例外処理、
+							コーディング規約など</li>
+					</ul>
+				</div>
+
+				<div class="item">
+					<h3>OracleDB</h3>
+					<ul>
+						<li>Oracleデータベース環境の構築CRUD処理</li>
+						<li>集約、並び替え、結合、副問い合わせ</li>
+						<li>JDBCの理解と演習課題</li>
+					</ul>
+				</div>
+
+				<div class="item">
+					<h3>Java Spring</h3>
+					<ul>
+						<li>Springの習得内容</li>
+					</ul>
+				</div>
+
+				<div class="item">
+					<h3>その他</h3>
+					<ul>
+						<li>HTML, CSS, JavaScript</li>
+						<li>Adobe Photoshop, Illustrator</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+		<section id="works">
+			<h2>成果物</h2>
+			<h4>チーム開発演習: <a class="project-url" href="" alt="成果1のURL">➤ 社員情報CRUD-コンソールアプリ</a></h4>
+			<h4>個人開発演習: <a class="project-url" href="" alt="成果2のURL">➤ 社員情報WEBアプリ</a></h4>
+			<!--			<h3>その他の成果物</h3>-->
+			<!--			<a href="" alt="その他1"></a>-->
+		</section>
+
+		<section id="galleries">
+			<h2>写真集</h2>
+			<div class="gallery">
+				<img src="./image/gallery-img-1.jpg" alt="Gallery-img-1" onclick="this.requestFullscreen()">
+				<img src="./image/gallery-img-2.jpg" alt="Gallery-img-2" onclick="this.requestFullscreen()">
+				<img src="./image/gallery-img-3.jpg" alt="Gallery-img-3" onclick="this.requestFullscreen()">
+				<img src="./image/gallery-img-4.jpg" alt="Gallery-img-4" onclick="this.requestFullscreen()">
+			</div>
+		</section>
+		<section id="contact">
+			<h2>お問い合わせ</h2>
+			<table class="info">
+				<tr>
+					<th>住所</th>
+					<td>大阪府堺市堺区○○○</td>
+				</tr>
+				<tr>
+					<th>所属先</th>
+					<td>株式会社uluca</td>
+				</tr>
+				<tr>
+					<th>メール</th>
+					<td><a href="mailto:@gmail.com">メール送信</a></td>
+				</tr>
+				<tr>
+					<th>電話</th>
+					<td><a href="tel:+810012345678">000-1234-5678</a></td>
+				</tr>
+			</table>
+			<div class="container">
+				<form action="">
+					<label for="fname">氏名（漢字またはアルファベット）</label>
+					<input type="text" id="fname" name="fullname" placeholder="名前">
+					<label for="pnounce">氏名（ひらがな）</label>
+					<input type="text" id="pnounce" name="pronounce" placeholder="おなまえ">
+					<label for="subject">お問い合わせ内容</label>
+					<textarea id="subject" name="subject" placeholder="お問い合わせ内容"
+						style="height:200px"></textarea>
+					<input type="submit" value="送信">
+				</form>
+			</div>
+		</section>
+		<div class="footer">
+			<div class="copyright"><small>&copy; 2025 Dang Dinh Phong</small></div>
+		</div>
+		<button onclick="topFunction()" id="myBtn" title="Go to top"><img src="./image/up-arrow.png"
+				alt="to-top"></button>
+	</div>
+
+	<script>
+		//ボタン表示を有効化する
+		let mybutton = document.getElementById("myBtn");
+
+		//トップ画面から20px下にスクロールされたら表示するように設定
+		window.onscroll = function () {scrollFunction()};
+		
+		
+		function scrollFunction() {
+			if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+				mybutton.style.display = "block";
+			} else {
+				mybutton.style.display = "none";
+			}
+		}
+		
+		//ボタンがクリックされたらトップ画面に移動
+		function topFunction() {
+			document.body.scrollTop = 0; //Safari用
+			document.documentElement.scrollTop = 0; //Chrome, Firefox, IE, Opera用
+		}
+	</script>
+</body>
+
+</html>
