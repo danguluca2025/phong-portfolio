@@ -20,6 +20,7 @@ td {
 h2,
 h3 {
 	font-weight: 500;
+	padding: 10px 0;
 }
 
 .nav {
@@ -78,26 +79,24 @@ h3 {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	gap: 10px;
-	justify-content: space-between;
 }
 
 .skill-grid {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	gap: 10px;
-	justify-content: space-between;
 }
 
 .skill-grid li {
 	list-style-type: square;
 }
 
-.item {
+.introduce-grid .item,
+.skill-grid .item {
 	display: grid;
 	grid-template-columns: 1fr;
-	align-items: center;
-	justify-content: space-between;
-	padding: 10px;
+	gap: 10px;
+	padding: 20px;
 	border-radius: 8px;
 	background-color: aliceblue;
 }
