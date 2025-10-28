@@ -34,17 +34,18 @@ h4 {
 	font-weight: 500;
 }
 
+
 a:link {
-	color: darkblue;
+	color: deepskyblue;
 }
 
 a:link:hover,
 a:visited:hover {
-	color: deepskyblue;
+	color: black;
 }
 
 a:visited {
-	color: initial;
+	color: deepskyblue;
 	text-decoration: none;
 }
 
@@ -78,10 +79,10 @@ a:visited {
 	text-decoration: none;
 }
 
-.nav li a.active {
-	background-color: #4CAF50;
-	color: white;
-}
+/*.nav li a.active {*/
+/*	background-color: #4CAF50;*/
+/*	color: white;*/
+/*}*/
 
 .nav li a:hover:not(.active) {
 	background-color: skyblue;
