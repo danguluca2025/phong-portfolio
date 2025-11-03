@@ -69,6 +69,7 @@ a:visited {
 .nav li img {
 	width: 80%;
 	padding: 10px;
+	aspect-ratio: 1/1;
 }
 
 .nav li a {
@@ -117,24 +118,30 @@ h2 {
 
 /*スキルブロック
 -----------------------*/
-.skill-grid {
+.skill-grid,
+.work-grid {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	gap: 10px;
 }
 
-.skill-grid li {
-	list-style-type: square;
-}
-
 /*自己紹介＋スキルの共有部分：item要素
 -----------------------*/
-.item {
-	border-radius: 8px;
-	display: grid;
-	grid-template-columns: 1fr;
+.item-box {
 	background-color: aliceblue;
-	padding: 10px;
+	border-radius: 1rem;
+	padding: 1rem;
+
+	>ul {
+		/*		background-color: red;*/
+		justify-self: center;
+		list-style-type: none;
+		padding: 0;
+
+		>li {
+			padding: 0;
+		}
+	}
 }
 
 /*成果物ブロック
@@ -161,6 +168,7 @@ h2 {
 .gallery img {
 	width: 100%;
 	border-radius: 8px;
+	aspect-ratio: 16/9;
 }
 
 /*scroll-to-topボタンの適用
@@ -174,6 +182,9 @@ h2 {
 	/*位置設定*/
 	bottom: 40px;
 	right: 30px;
+	
+	height: 40px;
+	width: 40px;
 
 	z-index: 99;
 	/*オーバーラップさせない*/
@@ -182,22 +193,29 @@ h2 {
 	/*ボーダー削除*/
 
 	/*通常色*/
-	background-color: rgb(0, 128, 255, 0.5);
-
+	background-color: royalblue;
+	opacity: 90%;
 	/*ホバー時にポインター表示*/
 	cursor: pointer;
-	padding: 15px;
 	border-radius: 8px;
-}
-
-button img {
-	width: 20px;
-	height: 20px;
+	border: solid black 1px;
+	>img{
+		display: flex;
+		width: 30px;
+		height: 30px;
+		justify-self: center;
+		align-self: center;
+		opacity: 100%;
+	}
 }
 
 #myBtn:hover {
 	/*ホバー時の背景色*/
-	background-color: #555;
+	background-color: powderblue;
+	opacity: 90%;
+	>img{
+		opacity: 70%;
+	}
 }
 
 /*お問い合わせ情報テーブルの調整
@@ -299,9 +317,24 @@ input[type=submit]:hover {
 
 	.gallery,
 	.introduce-grid,
-	.skill-grid {
+	.skill-grid,
+	.work-grid {
 		grid-template-columns: 1fr;
 	}
+
+	.item-box {
+		>ul {
+			background-color: red;
+			justify-self: start;
+			list-style-type: none;
+			padding: auto;
+
+			>li {
+				padding: auto;
+			}
+		}
+	}
+
 	.content,
 	.introduce-grid {
 		margin-left: 0;
@@ -311,26 +344,22 @@ input[type=submit]:hover {
 		width: 30px;
 		height: 30px;
 	}
-	
-	.footer{
+
+	.footer {
 		background-color: antiquewhite;
 		margin-left: 0;
 		border-radius: 8px;
 	}
-	.copyright{
+
+	.copyright {
 		justify-content: center;
 		text-align: center;
 	}
 }
 
 @media screen and (max-width: 450px) {
-	.nav li a{
+	.nav li a {
 		font-size: 10px;
 		gap: none;
-	}
-	.work-grid {
-		grid-template-columns: 1fr;
-		justify-content: center;
-
 	}
 }
