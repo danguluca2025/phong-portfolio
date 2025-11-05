@@ -324,7 +324,6 @@ input[type=submit]:hover {
 
 	.item-box {
 		>ul {
-			background-color: red;
 			justify-self: start;
 			list-style-type: none;
 			padding: auto;
