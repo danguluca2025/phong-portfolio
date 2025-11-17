@@ -36,6 +36,7 @@ h4 {
 
 a:link {
 	color: darkblue;
+	text-decoration: none;
 }
 
 a:link:hover,
@@ -46,6 +47,10 @@ a:visited:hover {
 a:visited {
 	color: initial;
 	text-decoration: none;
+}
+
+li {
+	list-style-type: none;
 }
 
 /*ヘッダー
@@ -79,14 +84,14 @@ a:visited {
 	text-decoration: none;
 }
 
-.nav li a.active {
-	background-color: #4CAF50;
-	color: white;
+.nav li a:hover:not(.active) {
+	background-color: aliceblue;
+	font-weight: bold;
 }
 
-.nav li a:hover:not(.active) {
-	background-color: skyblue;
-	font-weight: bold;
+/*モバイルメニュー無効化*/
+.topnav {
+	display: none;
 }
 
 /*本文
@@ -125,7 +130,7 @@ h2 {
 	gap: 10px;
 }
 
-/*自己紹介＋スキルの共有部分：item要素
+/*自己紹介/スキル/成果物ブロック：item要素
 -----------------------*/
 .item-box {
 	background-color: aliceblue;
@@ -142,12 +147,6 @@ h2 {
 			padding: 0;
 		}
 	}
-}
-
-/*成果物ブロック
------------------------*/
-.project-url {
-	font-weight: normal;
 }
 
 .work-grid {
@@ -174,25 +173,25 @@ h2 {
 /*scroll-to-topボタンの適用
 -----------------------*/
 #myBtn {
-  display: none; 
-  position: fixed;
-  bottom: 20px;
-  right: 30px;
-  z-index: 99;
-  border: none;
-  outline: none;
-  background-color: darkblue;
-  color: antiquewhite;
-  cursor: pointer;
-  padding: 15px;
-  border-radius: 10px;
-  font-size: 15px;
-  opacity: 70%;
+	display: none;
+	position: fixed;
+	bottom: 20px;
+	right: 30px;
+	z-index: 99;
+	border: none;
+	outline: none;
+	background-color: darkblue;
+	color: antiquewhite;
+	cursor: pointer;
+	padding: 15px;
+	border-radius: 10px;
+	font-size: 15px;
+	opacity: 70%;
 }
 
 #myBtn:hover {
-  background-color: cornflowerblue; 
-  opacity: 100%;
+	background-color: cornflowerblue;
+	opacity: 100%;
 }
 
 /*お問い合わせ情報テーブルの調整
@@ -288,7 +287,8 @@ input[type=submit]:hover {
 		justify-items: center;
 		background-color: aliceblue;
 		padding: 0 auto;
-		>li a{
+
+		>li a {
 			font-weight: bold;
 		}
 	}
@@ -335,8 +335,49 @@ input[type=submit]:hover {
 }
 
 @media screen and (max-width: 450px) {
-	.nav li a {
-		font-size: 10px;
-		gap: none;
+	.nav {
+		display: none;
 	}
+
+
+	/*モバイルメニュー--------------------------------------------------*/
+	.topnav {
+		display: block;
+		overflow: hidden;
+		background-color: skyblue;
+		position: relative;
+
+		>:first-child {
+			font-size: larger;
+			color: white;
+		}
+	}
+
+	/* Hide the links inside the navigation menu (except for logo/home) */
+	.topnav #myLinks {
+		display: none;
+		background-color: lightblue;
+		opacity: 70%;
+		font-weight: bold;
+		text-align: center;
+	}
+
+	/* Style navigation menu links */
+	.topnav a {
+		color: black;
+		padding: 14px 16px;
+		text-decoration: none;
+		font-size: 17px;
+		display: block;
+	}
+
+	/* Style the hamburger menu */
+	.topnav a.icon {
+		background: ghostwhite;
+		display: block;
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+
 }

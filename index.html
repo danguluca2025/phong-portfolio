@@ -16,7 +16,7 @@
 </head>
 
 <body>
-	<!--「サイドバー(PC)・ヘッドバー(モバイル)」-->
+	<!--「サイドバー(PC)」-->
 	<ul class="nav">
 		<li><img class="nav-img" src="./image/favicon.png" alt="header-pic"></li>
 		<li><a href="#introduce">自己紹介</a></li>
@@ -25,6 +25,26 @@
 		<li><a href="#galleries">写真集</a></li>
 		<li><a href="#contact">お問い合わせ</a></li>
 	</ul>
+
+	<!--「モバイル用ハンバーグメニュー」-->
+	<!-- ハンバーグメニュアイコン -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- Top Navigation Menu -->
+	<div class="topnav">
+		<a>ダン ディンフォン</a>
+		<!-- Navigation links (hidden by default) -->
+		<div id="myLinks">
+			<a href="#introduce">自己紹介</a>
+			<a href="#skills">スキル</a>
+			<a href="#works">成果物</a>
+			<a href="#galleries">写真集</a>
+			<a href="#contact">お問い合わせ</a>
+		</div>
+		<!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+		<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+			<i class="fa fa-bars"></i>
+		</a>
+	</div>
 
 	<!--本文-->
 	<div class="content">
@@ -123,44 +143,43 @@
 			<h2>成果物</h2>
 			<div class="work-grid">
 				<div class="item-box">
-					<h3>開発演習</h3>
-					<ul>
-						<li><a class="project-url" href="https://github.com/danguluca2025/console_crud_user_dang.git"
-								alt="成果1のURL">➤社員情報CRUD-コンソールアプリ</a></li>
-						<li><a class="project-url" href="" alt="成果2のURL">➤社員情報WEBアプリ</a></li>
-					</ul>
-				</div>
+					<div>
+						<h3>開発演習</h3>
+						<ul>
+							<li><a class="project-url"
+									href="https://github.com/danguluca2025/console_crud_user_dang.git">➤社員情報CRUD-コンソールアプリ</a>
+							</li>
+							<li><a class="project-url" href="">➤社員情報WEBアプリ</a></li><br>
+						</ul>
+					</div>
+					<div>
+						<h3>理解度演習</h3>
+						<ul>
+							<li>JavaSpring：</li>
+							<li><a href="">・演習1</a>　<a href="">・演習2</a></li><br>
 
-				<div class="item-box">
-					<h3>理解度演習</h3>
-					<ul>
-						<li>JavaSpring：</li>
-						<li><a href="">・理解度演習_1</a></li>
-						<li><a href="">・理解度演習_2</a></li><br>
-						
-						<li>Java基礎：</li>
-						<li><a href="">・理解度演習_1</a></li>
-						<li><a href="">・理解度演習_2</a></li>
-					</ul>
+							<li>Java基礎：</li>
+							<li><a href="">・演習1</a>　<a href="">・演習2</a></li>
+						</ul>
+					</div>
 				</div>
 				<div class="item-box">
 					<h3>練習問題</h3>
 					<ul>
-						<li>JavaSpring練習問題：</li>
-						<li><a href="https://github.com/danguluca2025/spring_practice.git" target="_blank">・基礎編</a></li>
-						<li><a href="">・応用編</a></li><br>
-						
+						JavaSpring練習問題：
+						<li><a href="https://github.com/danguluca2025/spring_practice.git" target="_blank">・基礎編</a>
+							　<a href="">・応用編</a></li><br>
+
 						<li>Oracle練習問題：</li>
-						<li><a href="">・練習問題</a></li>
-						<li><a href="">・確認演習</a></li>
-						
-						<li><a href="">OracleJDBC_練習問題</a></li>
-						<li><a href="">OracleJDBC_確認演習</a></li><br>
-						
+						<li><a href="">・練習問題</a>　<a href="">・確認演習</a></li>
+						<li><a href="">・JDBC_練習問題</a>　<a href="">・JDBC_確認演習</a></li><br>
+
 						<li>Java基礎_練習問題：</li>
-						<li><a href="https://github.com/danguluca2025/java-training.git" target="_blank">・基礎編</a></li>
-						<li><a href="https://github.com/danguluca2025/java-advanced-training.git" target="_blank">・応用編</a></li>
-						<li><a href="">確認演習</a></li>
+						<li>
+							<a href="https://github.com/danguluca2025/java-training.git" target="_blank">・基礎編</a>
+							　<a href="" target="_blank">・応用編</a>
+							　<a href="">・確認演習</a>
+						</li>
 					</ul>
 				</div>
 				<div class="item-box">
@@ -192,7 +211,7 @@
 			<table class="info">
 				<tr>
 					<th>住所</th>
-					<td>大阪府堺市堺区○○○</td>
+					<td>大阪府堺市堺区</td>
 				</tr>
 				<tr>
 					<th>所属先</th>
@@ -200,11 +219,7 @@
 				</tr>
 				<tr>
 					<th>メール</th>
-					<td><a href="mailto:@gmail.com">@gmail.com</a></td>
-				</tr>
-				<tr>
-					<th>電話</th>
-					<td><a href="tel:+810012345678">000-1234-5678</a></td>
+					<td><a href="mailto:@gmail.com">Gmail</a></td>
 				</tr>
 			</table>
 
@@ -231,8 +246,8 @@
 		<button onclick="topFunction()" id="myBtn" title="トップ">トップ</button>
 	</div>
 
-	<!--scroll-to-topボタンのJs設定-->
 	<script>
+		//scroll-to-topボタンのJs設定
 		//ボタン表示を有効化する
 		let mybutton = document.getElementById("myBtn");
 
@@ -252,6 +267,16 @@
 		function topFunction() {
 			document.body.scrollTop = 0; //Safari用
 			document.documentElement.scrollTop = 0; //Chrome, Firefox, IE, Opera用
+		}
+
+		//モバイルメニュー設定
+		function myFunction() {
+			var x = document.getElementById("myLinks");
+			if (x.style.display === "block") {
+				x.style.display = "none";
+			} else {
+				x.style.display = "block";
+			}
 		}
 	</script>
 </body>
