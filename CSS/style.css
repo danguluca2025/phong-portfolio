@@ -8,18 +8,6 @@ html {
 
 body {
 	margin: 0;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-a,
-li,
-p div,
-span,
-div a {
 	font-family: "Noto Sans JP", sans-serif;
 	font-optical-sizing: auto;
 	font-weight: 400px;
@@ -140,7 +128,6 @@ h2 {
 	padding: 1rem;
 
 	>ul {
-		/*		background-color: red;*/
 		justify-self: center;
 		list-style-type: none;
 		padding: 0;
@@ -194,40 +181,6 @@ h2 {
 #myBtn:hover {
 	background-color: cornflowerblue;
 	opacity: 100%;
-}
-
-/*お問い合わせ情報テーブルの調整
------------------------*/
-.info {
-	width: 100%;
-	max-width: 500px;
-	margin: auto;
-	padding: 10px;
-	background-color: aliceblue;
-	border-spacing: 0;
-	border-radius: 8px;
-	margin-bottom: 20px;
-}
-
-.info th,
-td {
-	border-bottom: solid lightslategrey 0.5px;
-}
-
-.info tr:last-child th,
-.info tr:last-child td {
-	border-bottom: none;
-}
-
-.info th {
-	text-align: center;
-	padding: 1rem;
-	border-right: solid lightslategrey 0.5px;
-}
-
-.info td {
-	text-align: center;
-	padding: 1rem 0;
 }
 
 /* お問い合わせフォーム 
@@ -336,30 +289,29 @@ input[type=submit]:hover {
 	}
 }
 
+
+
 @media screen and (max-width: 450px) {
 	.nav {
 		display: none;
 	}
 
-
 	/*モバイルメニューを有効化・設定------------------------------------*/
 	.topnav {
 		display: block;
 		overflow: hidden;
-		background-color: skyblue;
+		background-color: aliceblue;
 		position: relative;
 
 		>:first-child {
-			color: white;
-			font-family: NotoJP, san-serif;
+			background-color: deepskyblue;
+			color: aliceblue;
 		}
 	}
 
 	/* Hide the links inside the navigation menu (except for logo/home) */
 	.topnav #myLinks {
 		display: none;
-		background-color: aliceblue;
-		opacity: 70%;
 		font-weight: bold;
 		text-align: center;
 	}
@@ -375,11 +327,10 @@ input[type=submit]:hover {
 
 	/* Style the hamburger menu */
 	.topnav a.icon {
-		background: powderblue;
+		background: aliceblue;
 		display: block;
 		position: absolute;
 		right: 0;
 		top: 0;
 	}
-
 }
