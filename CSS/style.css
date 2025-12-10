@@ -25,18 +25,14 @@ h4 {
 }
 
 a:link {
-	color: darkblue;
 	text-decoration: none;
 }
 
 a:link:hover,
 a:visited:hover {
-	color: deepskyblue;
-}
-
-a:visited {
-	color: initial;
-	text-decoration: none;
+	color: orangered;
+	border: 0.5px solid orangered;
+	border-radius: 5px;
 }
 
 li {
@@ -75,8 +71,11 @@ li {
 }
 
 .nav li a:hover:not(.active) {
-	background-color: aliceblue;
+	background-color: orange;
+	color: whitesmoke;
 	font-weight: bold;
+	border-radius: 0;
+	border: none;
 }
 
 /*モバイルメニュー無効化*/
@@ -144,21 +143,6 @@ h2 {
 	justify-content: center;
 }
 
-/*写真集ブロック
------------------------*/
-.gallery {
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	gap: 10px;
-	justify-content: space-between;
-}
-
-.gallery img {
-	width: 100%;
-	border-radius: 8px;
-	aspect-ratio: 16/9;
-}
-
 /*scroll-to-topボタンの適用
 -----------------------*/
 #myBtn {
@@ -169,17 +153,18 @@ h2 {
 	z-index: 99;
 	border: none;
 	outline: none;
-	background-color: darkblue;
+	background-color: orange;
 	color: antiquewhite;
 	cursor: pointer;
 	padding: 15px;
 	border-radius: 10px;
 	font-size: 15px;
-	opacity: 70%;
+	opacity: 80%;
+	font-weight: bold;
 }
 
 #myBtn:hover {
-	background-color: cornflowerblue;
+	background-color: orangered;
 	opacity: 100%;
 }
 
@@ -202,7 +187,7 @@ textarea {
 
 /*送信ボタンを色付け*/
 input[type=submit] {
-	background-color: deepskyblue;
+	background-color: orange;
 	color: white;
 	padding: 12px 20px;
 	border: none;
@@ -212,7 +197,7 @@ input[type=submit] {
 
 /*送信ボタンのホバーに別の色付け*/
 input[type=submit]:hover {
-	background-color: lightskyblue;
+	background-color: orangered;
 }
 
 /*フォームブロックに色調整、padding調整など*/
@@ -300,12 +285,11 @@ input[type=submit]:hover {
 	.topnav {
 		display: block;
 		overflow: hidden;
-		background-color: aliceblue;
+		color: orangered;
 		position: relative;
 
 		>:first-child {
-			background-color: deepskyblue;
-			color: aliceblue;
+			font-weight: bolder;
 		}
 	}
 
@@ -327,8 +311,7 @@ input[type=submit]:hover {
 
 	/* Style the hamburger menu */
 	.topnav a.icon {
-		background: aliceblue;
-		display: block;
+		background-color: orangered;
 		position: absolute;
 		right: 0;
 		top: 0;
